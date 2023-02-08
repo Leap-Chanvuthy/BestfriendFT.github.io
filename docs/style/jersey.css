@@ -1,0 +1,123 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #a1ecc0 0%, #e7f0fd 100%);
+  background-color: #092c3e;
+  background-image: url("../video/patterns.png");
+}
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  margin: 2rem;
+}
+.card .image-box {
+  height: 500px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+  background-image: url("../video/patterns.png");
+}
+.card .profile-details img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+
+.footer {
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+  .card .image-box {
+    height: 250px;
+  }
+  .card .profile-details img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  .footer {
+    display:grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap : 2rem;
+    text-align: center;
+}
+
+}
+@media screen and (max-width: 420px) {
+    .card .image-box {
+        height: 200px;
+      }
+    .card .profile-details img {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+      }
+      .footer {
+        display:grid;
+        grid-template-columns: repeat(1 , 1fr);
+        text-align: center;
+    
+    }
+}

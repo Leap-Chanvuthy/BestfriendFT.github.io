@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+html body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: block;
+}
+
+.video-section{
+    position: relative;
+    height: 100vh;
+}
+#video_bg{
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left: 0;
+    overflow:hidden;
+}
+
+.overlay h3 {
+    font-weight: bolder;
+    font-size:50px;
+    padding-top: 20px;
+    padding-left: 50px ;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    color: rgb(0, 92, 52);
+}
+.overlay p {
+    font-size:16px;
+    margin-top:10px;
+    padding-left: 50px;
+    color: white;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    gap:1rem;
+}
+
+.card-container-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    gap:1rem;
+}
+
+.card{
+    border:3px solid #09203f;
+    border-radius: 10px;
+    width: 15rem;
+    height: 23rem;
+    margin-top: 3rem;
+  }
+  
+  .card_img{
+    width:150px;
+    margin-top: -3rem;
+    border-radius: 5px;
+    align-items: center;
+    margin-left: 3rem;
+    transition: 0.3s;
+  }
+  .card img:hover{
+    width:160px;
+    cursor: pointer;
+  }
+  
+  .card h1{
+    color :#ffffff;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .card p{
+    color:rgb(228, 225, 225);
+    text-align: center;
+  }
+  
+  .card_btn{
+    margin-top: .5rem;
+    margin-left: 3.5rem;
+    padding:5px 20px;
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    border: none;
+    color :white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+  }
+  .card_btn:hover{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    color: red;
+  }
+
+  .text{
+    text-align: center;
+    padding-top:3rem;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: #a6c0fe;
+  }
+
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-gap:2rem;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+.footer {
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    text-align: center;
+    grid-gap:.5rem;
+    padding-top: 2rem;
+    background-color: white;
+    background-image: url(../video/patterns.png);
+}
+
+.footer h3{
+    font-weight: bold;
+}
+
+@media (max-width : 420px) {
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin-left: 4rem;
+        margin-right: 0rem;
+        margin-top: 4rem;
+        gap:1rem;
+        
+    }
+    .card h1{
+        color :#000000;
+        font-weight: bolder;
+        text-align: center;
+      }
+      
+      .card p{
+        color:rgb(32, 27, 27);
+        text-align: center;
+      }
+      
+    
+    .text{
+        text-align: center;
+        padding-top:3rem;
+        font-size: 20px;
+        font-family: 'Lobster', cursive;
+        color: #a6c0fe;
+      }
+
+    .dashboard{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:2rem;
+        justify-content: center;
+        margin-left:.5rem;
+        margin-top: -2rem;
+        background-image: url("../video/patterns.png");
+    }
+
+    .footer {
+        display:grid;
+        grid-template-columns: repeat(1 , 1fr);
+        text-align: center;
+        grid-gap: 1rem;
+        background-image: url("../video/patterns.png");
+        background-size: cover;
+    }
+    
+    .footer h3{
+        font-weight: bold;
+    }
+
+    #video_bg{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        padding-top: 0;
+    }
+
+    .overlay h3 {
+        font-weight: bolder;
+        font-size:30px;
+        padding: 50px;
+        padding-bottom: 2px;
+        color: rgb(68, 231, 160);
+    }
+    .overlay p {
+        font-size:10px;
+        margin-top:10px;
+        padding-left: 50px;
+        color: white;
+    }
+
+}
+
+@media (max-width : 680px) {
+    
+    .dashboard{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:2rem;
+    }
+}
