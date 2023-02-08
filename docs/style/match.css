@@ -140,6 +140,9 @@ html body{
 
 @media (max-width : 420px) {
 
+    .video-section {
+        display:none;
+    }
     .card-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
